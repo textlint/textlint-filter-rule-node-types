@@ -7,7 +7,7 @@ const defaultOptions = {
      */
     nodeTypes: []
 };
-export default function (context, options = defaultOptions) {
+module.exports = function (context, options = defaultOptions) {
     const {shouldIgnore} = context;
     const nodeTypes = options.nodeTypes || defaultOptions.nodeTypes;
     assert(Array.isArray(nodeTypes) && nodeTypes.length > 0, `You forgot setting to options like { "nodeTypes" : ["Str"] }`);
@@ -18,4 +18,4 @@ export default function (context, options = defaultOptions) {
         }
     });
     return rule;
-}
+};
