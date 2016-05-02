@@ -1,4 +1,4 @@
-# textlint-rule-ignore-node-types
+# textlint-rule-ignore-node-types [![Build Status](https://travis-ci.org/textlint/textlint-rule-ignore-node-types.svg?branch=master)](https://travis-ci.org/textlint/textlint-rule-ignore-node-types)
 
 [textlint](https://textlint.github.io/ "textlint") rule that ignore node's type if the type is reported.
 
