@@ -3,7 +3,7 @@
 const TextLintCore = require("textlint").TextLintCore;
 const TextLintNodeType = require("textlint").TextLintNodeType;
 import ignoreRule from "../src/textlint-rule-ignore-node-types";
-import reportRule from "../src/textlint-rule-report-node-types";
+import reportRule from "textlint-rule-report-node-types";
 const assert = require("power-assert");
 describe("textlint-rule-ignore-node-types", function () {
     context("when report type", function () {

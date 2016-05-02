@@ -67,6 +67,10 @@ We can resolve the issue by the ignoring rule instead of disabling comment.
 
 Of course, _disabling comment_ could be implemented as _ignoring rule_. 
 
+## Related
+
+Opposite <-> [textlint-rule-report-node-types](https://github.com/textlint/textlint-rule-report-node-types "textlint-rule-report-node-types").
+
 ## Contributing
 
 1. Fork it!
