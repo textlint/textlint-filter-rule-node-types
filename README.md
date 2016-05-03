@@ -22,7 +22,7 @@ Dependencies
 
 ## Usage
 
-If you ignore `BlockQuote` node and define `"BlockQuote"` to `"nodeTypes"`.
+If you want to ignore `BlockQuote` node, define `"BlockQuote"` to `"nodeTypes"`.
 
 `.textlintrc`
 
