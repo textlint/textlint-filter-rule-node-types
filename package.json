@@ -17,7 +17,7 @@
   },
   "version": "0.1.0",
   "description": "texlint rule that ignore reported error by user defeined node's type.",
-  "main": "lib/textlint-rule-ignore-node-types",
+  "main": "lib/textlint-rule-ignore-node-types.js",
   "directories": {
     "test": "test"
   },
