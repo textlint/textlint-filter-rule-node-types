@@ -15,6 +15,11 @@ FooRule also check the `BlockQuote` text, but you want to ignore the `BlockQuote
 
     npm install textlint-rule-ignore-node-types
 
+Dependencies
+
+- textlint >=[6.5.0](https://github.com/textlint/textlint/releases/tag/6.5.0 "6.5.0")
+
+
 ## Usage
 
 If you ignore `BlockQuote` node and define `"BlockQuote"` to `"nodeTypes"`.
