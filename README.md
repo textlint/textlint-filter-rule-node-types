@@ -17,7 +17,7 @@ FooRule also check the `BlockQuote` text, but you want to ignore the `BlockQuote
 
 Dependencies
 
-- textlint >=[6.5.0](https://github.com/textlint/textlint/releases/tag/6.5.0 "6.5.0")
+- textlint >=[6.6.0](https://github.com/textlint/textlint/releases/tag/6.6.0 "6.6.0")
 
 
 ## Usage

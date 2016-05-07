@@ -14,7 +14,7 @@ module.exports = function (context, options = defaultOptions) {
     const rule = {};
     nodeTypes.forEach(type => {
         rule[type] = (node) => {
-            shouldIgnore(node);
+            shouldIgnore(node.range);
         }
     });
     return rule;
