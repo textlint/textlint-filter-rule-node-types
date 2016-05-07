@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/textlint/textlint-rule-ignore-node-types/issues"
   },
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "texlint rule that ignore reported error by user defeined node's type.",
   "main": "lib/textlint-rule-ignore-node-types.js",
   "directories": {
