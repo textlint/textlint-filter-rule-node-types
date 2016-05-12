@@ -3,7 +3,7 @@
 const assert = require("assert");
 const defaultOptions = {
     /**
-     * @type {string[]}
+     * @type {string[]} array of node type string
      */
     nodeTypes: []
 };
@@ -14,7 +14,9 @@ module.exports = function (context, options = defaultOptions) {
     const rule = {};
     nodeTypes.forEach(type => {
         rule[type] = (node) => {
-            shouldIgnore(node.range);
+            shouldIgnore(node.range, {
+                ruleId: "*"
+            });
         }
     });
     return rule;
