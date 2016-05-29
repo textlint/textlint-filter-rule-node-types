@@ -1,4 +1,4 @@
-# textlint-rule-ignore-node-types [![Build Status](https://travis-ci.org/textlint/textlint-rule-ignore-node-types.svg?branch=master)](https://travis-ci.org/textlint/textlint-rule-ignore-node-types)
+# textlint-filter-rule-node-types [![Build Status](https://travis-ci.org/textlint/textlint-filter-rule-node-types.svg?branch=master)](https://travis-ci.org/textlint/textlint-filter-rule-node-types)
 
 [textlint](https://textlint.github.io/ "textlint") rule that ignore node's type if the type is reported.
 
@@ -9,15 +9,17 @@ These work fine, but you want to ignore some reported error in your text.
 
 FooRule also check the `BlockQuote` text, but you want to ignore the `BlockQuote` text.
 
-`textlint-rule-ignore-node-types` rule which is **ignoring rule** resolve the issue.
+`textlint-filter-rule-node-types` rule resolve the issue.
+
+This is [filter rule](https://github.com/textlint/textlint/blob/master/docs/filter-rule.md "Filter rule") of textlint.
 
 ## Installation
 
-    npm install textlint-rule-ignore-node-types
+    npm install textlint-filter-rule-node-types
 
 Dependencies
 
-- textlint >=[6.6.0](https://github.com/textlint/textlint/releases/tag/6.6.0 "6.6.0")
+- textlint >=[6.9.0](https://github.com/textlint/textlint/releases/tag/6.9.0 "6.9.0")
 
 
 ## Usage
@@ -28,7 +30,7 @@ If you want to ignore `BlockQuote` node, define `"BlockQuote"` to `"nodeTypes"`.
 
 ```json
 {
-    "rules": {
+    "filters": {
         "ignore-node-types": {
             "nodeTypes": ["BlockQuote"]
         }
@@ -43,7 +45,7 @@ OR
 ```js
 const TextLintNodeType = require("textlint").TextLintNodeType;
 module.exports = {
-    "rules": {
+    "filters": {
         "ignore-node-types": {
             "nodeTypes": [TextLintNodeType.BlockQuote]
         }
@@ -58,7 +60,6 @@ If you want to know all types of TxtNode, please see the document.
 ## Tests
 
     npm test
-
 
 ## Knowledge
 
