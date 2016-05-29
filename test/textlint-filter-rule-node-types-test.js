@@ -38,7 +38,7 @@ describe("textlint-filter-rule-node-types", function () {
                     nodeTypes: [TextLintNodeType.Str]
                 }
             });
-            textlint.setupFilterRubles({
+            textlint.setupFilterRules({
                 ignore: filterRule
             }, {
                 ignore: {
