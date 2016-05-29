@@ -1,23 +1,23 @@
 {
-  "name": "textlint-rule-ignore-node-types",
+  "name": "textlint-filter-rule-node-types",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/textlint/textlint-rule-ignore-node-types.git"
+    "url": "git+https://github.com/textlint/textlint-filter-rule-node-types.git"
   },
   "author": "azu",
   "email": "azuciao@gmail.com",
-  "homepage": "https://github.com/textlint/textlint-rule-ignore-node-types",
+  "homepage": "https://github.com/textlint/textlint-filter-rule-node-types",
   "license": "MIT",
   "files": [
     "src/",
     "lib/"
   ],
   "bugs": {
-    "url": "https://github.com/textlint/textlint-rule-ignore-node-types/issues"
+    "url": "https://github.com/textlint/textlint-filter-rule-node-types/issues"
   },
   "version": "0.3.0",
   "description": "texlint rule that ignore reported error by user defeined node's type.",
-  "main": "lib/textlint-rule-ignore-node-types.js",
+  "main": "lib/textlint-filter-rule-node-types.js",
   "directories": {
     "test": "test"
   },
