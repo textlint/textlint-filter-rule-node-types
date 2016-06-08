@@ -1,6 +1,6 @@
 # textlint-filter-rule-node-types [![Build Status](https://travis-ci.org/textlint/textlint-filter-rule-node-types.svg?branch=master)](https://travis-ci.org/textlint/textlint-filter-rule-node-types)
 
-[textlint](https://textlint.github.io/ "textlint") rule that ignore node's type if the type is reported.
+[textlint](https://textlint.github.io/ "textlint") [filter rule](https://github.com/textlint/textlint/blob/master/docs/filter-rule.md) that filter error about specified node type.
 
 ## Story
 
@@ -31,7 +31,7 @@ If you want to ignore `BlockQuote` node, define `"BlockQuote"` to `"nodeTypes"`.
 ```json
 {
     "filters": {
-        "ignore-node-types": {
+        "node-types": {
             "nodeTypes": ["BlockQuote"]
         }
     }
@@ -46,7 +46,7 @@ OR
 const TextLintNodeType = require("textlint").TextLintNodeType;
 module.exports = {
     "filters": {
-        "ignore-node-types": {
+        "node-types": {
             "nodeTypes": [TextLintNodeType.BlockQuote]
         }
     }
