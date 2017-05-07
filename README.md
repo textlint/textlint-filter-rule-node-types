@@ -1,5 +1,7 @@
 # textlint-filter-rule-node-types [![Build Status](https://travis-ci.org/textlint/textlint-filter-rule-node-types.svg?branch=master)](https://travis-ci.org/textlint/textlint-filter-rule-node-types)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/textlint/textlint-filter-rule-node-types.svg)](https://greenkeeper.io/)
+
 [textlint](https://textlint.github.io/ "textlint") [filter rule](https://github.com/textlint/textlint/blob/master/docs/filter-rule.md) that filter error about specified node type.
 
 ## Story
