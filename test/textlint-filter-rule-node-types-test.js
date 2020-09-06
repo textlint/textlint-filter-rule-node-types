@@ -1,7 +1,7 @@
 // LICENSE : MIT
 "use strict";
-const TextLintCore = require("textlint").TextLintCore;
-const TextLintNodeType = require("textlint").TextLintNodeType;
+import { TextLintCore } from "textlint";
+import { ASTNodeTypes } from "@textlint/ast-node-types";
 import filterRule from "../src/textlint-filter-rule-node-types";
 import reportRule from "textlint-rule-report-node-types";
 const assert = require("power-assert");
@@ -13,14 +13,14 @@ describe("textlint-filter-rule-node-types", function () {
                 report: reportRule
             }, {
                 report: {
-                    nodeTypes: [TextLintNodeType.Str]
+                    nodeTypes: [ASTNodeTypes.Str]
                 }
             });
             textlint.setupFilterRules({
                 ignore: filterRule
             }, {
                 ignore: {
-                    nodeTypes: [TextLintNodeType.Str]
+                    nodeTypes: [ASTNodeTypes.Str]
                 }
             });
             return textlint.lintText("text").then(({messages}) => {
@@ -35,14 +35,14 @@ describe("textlint-filter-rule-node-types", function () {
                 report: reportRule
             }, {
                 report: {
-                    nodeTypes: [TextLintNodeType.Str]
+                    nodeTypes: [ASTNodeTypes.Str]
                 }
             });
             textlint.setupFilterRules({
                 ignore: filterRule
             }, {
                 ignore: {
-                    nodeTypes: [TextLintNodeType.Str]
+                    nodeTypes: [ASTNodeTypes.Str]
                 }
             });
             return textlint.fixText("text").then(({messages}) => {
@@ -58,17 +58,17 @@ describe("textlint-filter-rule-node-types", function () {
                 report2: reportRule
             }, {
                 report1: {
-                    nodeTypes: [TextLintNodeType.Str]
+                    nodeTypes: [ASTNodeTypes.Str]
                 },
                 report2: {
-                    nodeTypes: [TextLintNodeType.Str]
+                    nodeTypes: [ASTNodeTypes.Str]
                 }
             });
             textlint.setupFilterRules({
                 ignore: filterRule
             }, {
                 ignore: {
-                    nodeTypes: [TextLintNodeType.Str]
+                    nodeTypes: [ASTNodeTypes.Str]
                 }
             });
             return textlint.lintText("text").then(({messages}) => {
@@ -84,10 +84,10 @@ describe("textlint-filter-rule-node-types", function () {
                 report2: reportRule
             }, {
                 report1: {
-                    nodeTypes: [TextLintNodeType.Str]
+                    nodeTypes: [ASTNodeTypes.Str]
                 },
                 report2: {
-                    nodeTypes: [TextLintNodeType.Str]
+                    nodeTypes: [ASTNodeTypes.Str]
                 }
             });
             textlint.setupFilterRules({
@@ -97,7 +97,7 @@ describe("textlint-filter-rule-node-types", function () {
                     nodeTypes: [
                         {
                             ruleId: "report2",
-                            types: [TextLintNodeType.Str]
+                            types: [ASTNodeTypes.Str]
                         }
                     ]
                 }
