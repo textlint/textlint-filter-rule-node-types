@@ -76,4 +76,36 @@ describe("textlint-filter-rule-node-types", function () {
             });
         });
     });
+    context("when report multiple nodes and ignore type with complex nodeTypes", function () {
+        it("should messages is only one message", function () {
+            const textlint = new TextLintCore();
+            textlint.setupRules({
+                report1: reportRule,
+                report2: reportRule
+            }, {
+                report1: {
+                    nodeTypes: [TextLintNodeType.Str]
+                },
+                report2: {
+                    nodeTypes: [TextLintNodeType.Str]
+                }
+            });
+            textlint.setupFilterRules({
+                ignore: filterRule
+            }, {
+                ignore: {
+                    nodeTypes: [
+                        {
+                            ruleId: "report2",
+                            types: [TextLintNodeType.Str]
+                        }
+                    ]
+                }
+            });
+            return textlint.lintText("text").then(({messages}) => {
+                assert.equal(messages.length, 1);
+                assert.equal(messages[0].ruleId, "report1");
+            });
+        });
+    });
 });
